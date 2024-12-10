@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://group-1-j48q.onrender.com",
+  baseURL: "https://group-1-j48q.onrender.com/api",
 });
 
 export const UserSignUp = async (data) => await API.post("/user/signup", data);
