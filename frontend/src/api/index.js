@@ -4,8 +4,8 @@ const API = axios.create({
   baseURL: "https://group-1-j48q.onrender.com",
 });
 
-export const UserSignUp = async (data) => await API.post("https://group-1-j48q.onrender.com/user/signup", data);
-export const UserSignIn = async (data) => await API.post("https://group-1-j48q.onrender.com/user/signin", data);
+export const UserSignUp = async (data) => await API.post("/user/signup", data);
+export const UserSignIn = async (data) => await API.post("/user/signin", data);
 
 //Products
 export const getAllProducts = async (filter) =>
