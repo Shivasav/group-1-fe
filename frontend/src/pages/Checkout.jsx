@@ -80,7 +80,7 @@ const Checkout = () => {
           total,
         };
         // Save order to the database
-        await axios.post("http://localhost:8080/api/orders", orderData);
+        await axios.post("https://group-1-j48q.onrender.com/orders", orderData);
 
         dispatch(clearCart());
 
